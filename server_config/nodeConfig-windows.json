@@ -1,0 +1,38 @@
+{
+    "capabilities": [
+        {
+            "browserName": "firefox",
+            "platform": "WINDOWS",
+            "maxInstances": 2,
+            "webdriver.gecko.driver": "C:/Selenium/drivers/geckodriver.exe"
+        },
+        {
+            "browserName": "chrome",
+            "platform": "WINDOWS",
+            "maxInstances": 2,
+            "webdriver.chrome.driver": "C:/Selenium/drivers/chromedriver.exe"
+        },
+        {
+            "browserName": "internet explorer",
+            "version": "11",
+            "platform": "WINDOWS",
+            "javascriptEnabled": true,
+            "acceptSslCerts": true,
+            "ie.ensureCleanSession": true,
+            "maxInstances": 1,
+            "webdriver.ie.driver": "C:/Selenium/drivers/IEDriverServer.exe"
+        },
+        {
+            "browserName": "MicrosoftEdge",
+            "platform": "win10",
+            "maxInstances": 1,
+            "webdriver.edge.driver": "C:/Program Files (x86)/Microsoft Web Driver/MicrosoftWebDriver.exe"
+        }
+    ],
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5,
+    "port": 5555,
+    "register": true,
+    "registerCycle": 5000,
+    "hub": "http://my-hub-machine:4444"
+}

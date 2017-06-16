@@ -1,0 +1,106 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Launch with Firefox",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\nightwatch\\bin\\runner.js",
+            "stopOnEntry": false,
+            "args": ["--config", "${workspaceRoot}\\nightwatch.json", "--test", "${file}", "-e", "firefox"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
+            "name": "Launch with Chrome Mobile",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\nightwatch\\bin\\runner.js",
+            "stopOnEntry": false,
+            "args": ["--config", "${workspaceRoot}\\nightwatch.json", "--test", "${file}", "-e", "chromemob"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
+            "name": "Launch with Edge",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\nightwatch\\bin\\runner.js",
+            "stopOnEntry": false,
+            "args": ["--config", "${workspaceRoot}\\nightwatch.json", "--test", "${file}", "-e", "edge"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
+            "name": "Launch with IE11",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\nightwatch\\bin\\runner.js",
+            "stopOnEntry": false,
+            "args": ["--config", "${workspaceRoot}\\nightwatch.json", "--test", "${file}", "-e", "ie11"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
+            "name": "Launch Grid with Chrome Mobile",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\nightwatch\\bin\\runner.js",
+            "stopOnEntry": false,
+            "args": ["--config","nightwatch-grid.json","--test", "${file}", "-e", "chromemob"],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outFiles": []
+        }
+    ]
+}
